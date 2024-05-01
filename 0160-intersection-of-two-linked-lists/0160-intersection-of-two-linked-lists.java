@@ -42,7 +42,7 @@ public class Solution {
         while(tempA!=tempB){
             tempA=tempA.next;
             tempB=tempB.next;
-            if(tempA==null || tempB==null){
+            if(tempA==null ){
                 return null;
             }
         }
