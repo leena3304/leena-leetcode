@@ -18,10 +18,10 @@ class Solution {
             
         }
         if(f.next==null){
-            return s;
+            return s;   //odd length
         }
         else{
-            return s.next;
+            return s.next;//even length
         }
         
     }
