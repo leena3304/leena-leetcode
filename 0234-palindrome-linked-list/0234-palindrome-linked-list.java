@@ -13,16 +13,13 @@ class Solution {
         ListNode slow=head;
         ListNode fast=head;
         while(fast.next!=null && fast.next.next!=null){
-            slow=slow.next;
+            slow=slow.next;//if odd length mid becomes slow itself
             fast=fast.next.next;
         }
-       if(fast!=null){
-           slow=slow.next;//mid
+       if(fast.next!=null){
+           slow=slow.next;//mid for odd length
        }
-       // ListNode temp=mid.next;
-        //mid.next=null;
-     // ListNode mid=slow.next;
-      //  slow.next=null;
+      
         
         ListNode revhead=reverse(slow);
         while(revhead!=null){
@@ -39,9 +36,9 @@ class Solution {
         
     }
     public ListNode reverse(ListNode head){
-      // ListNode dummy=new ListNode(0);
+      
         ListNode prev=null;
-       // ListNode cur=head;
+    
         while(head!=null){
             ListNode next_node=head.next;
             head.next=prev;
