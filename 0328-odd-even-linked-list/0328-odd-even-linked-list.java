@@ -15,16 +15,16 @@ class Solution {
         }
         ListNode odd=head;
         ListNode even=head.next;
-        ListNode o=head;
-        ListNode e=head.next;
+        ListNode o=head; // to just store head
+        ListNode e=head.next; 
         
         while(even!=null && even.next!=null){
             odd.next=odd.next.next;
             even.next=even.next.next;
-            odd=odd.next;
+            odd=odd.next;//to move pointer forward
             even=even.next;
         }
-        odd.next=e;
+        odd.next=e;//to link even list to odd list
         return o;
     }
 }
