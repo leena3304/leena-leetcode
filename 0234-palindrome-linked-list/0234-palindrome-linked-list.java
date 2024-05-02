@@ -17,7 +17,7 @@ class Solution {
             fast=fast.next.next;
         }
        if(fast.next!=null){
-           slow=slow.next;//mid for odd length
+           slow=slow.next;//mid for even length
        }
       
         
