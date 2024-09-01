@@ -1,40 +1,4 @@
-/*class Solution {
-    public void nextPermutation(int[] nums) {
-        int ind=-1;
-        for(int i=nums.length-2;i>=0;i--){
-            if(nums[i]<nums[i+1]){
-                ind=i;
-                break;
-            }
-        }
-        if(ind!=-1){
-        for(int i=nums.length-1;i>=ind;i--){
-            if(nums[i]>nums[ind]){
-                swap(i,ind,nums);
-                break;
-            }
-            
-        }
-           reverse(ind+1,nums.length-1,nums);
-          
-        }
-    }
-      
-        
-        private void swap(int a,int b,int nums[]){
-            int temp=nums[a];
-            nums[a]=nums[b];
-            nums[b]=temp;
-        }
-    
-     private void reverse(int start, int end,int nums[]) {
-        while (start < end) {
-            swap(start, end,nums);
-            start++;
-            end--;
-        }
-    }
-}*/
+
 import java.util.Arrays;
 import java.util.Collections;
 
