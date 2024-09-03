@@ -20,7 +20,7 @@ class Solution {
                 return "Neither";
             }
             for(int i=0;i<values.length;i++){
-              
+             
                 
                
                   if(values[i].length()>1 && values[i].charAt(0)=='0'){
@@ -33,9 +33,10 @@ class Solution {
                         return "Neither";
                     }
                 }
-                 if(values[i].length() == 0 || values[i].length() > 3 || Integer.parseInt(values[i]) < 0 || Integer.parseInt(values[i]) > 255) {
+                if(values[i].length() == 0 || values[i].length() > 3 || Integer.parseInt(values[i]) < 0 || Integer.parseInt(values[i]) > 255) {
                     return "Neither";
                 }
+               
             }
             return "IPv4";
         }
